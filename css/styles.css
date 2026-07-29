@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3f87f5;
+    --secondary-color: #231d4f;
+    --tertiary-color: #848199;
+    --quatenary-color: #0a0826;
+    --dark-color: #3e3e3e;
+    --light-color: #6c6c6c;
+    --popup-color: #ff4e4e;
+    --footer-color: #0b0d17;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utility Class */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
