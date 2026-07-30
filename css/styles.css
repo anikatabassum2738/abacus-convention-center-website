@@ -172,6 +172,46 @@ img {
     margin-bottom: 1.5rem;
 }
 
+/* Album */
+.album {
+    padding: 5rem 0;
+}
+
+.album-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.album img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.album-content {
+    text-align: left;
+    flex: 1;
+
+    h2 {
+        color: var(--quatenary-color);
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: var(--light-color);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 2px;
+    }
+}
+
 @media(max-width: 768px) {
     .main-menu-items {
         display: none;
@@ -197,6 +237,19 @@ img {
 
     .hero-content p {
         font-size: 0.8rem;
+    }
+
+    /* album */
+    .album-flex {
+        flex-direction: column;
+    }
+
+    .album img {
+        width: 100%;
+    }
+
+    .album-content {
+        text-align: center;
     }
     
 }
