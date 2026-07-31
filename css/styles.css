@@ -112,7 +112,7 @@ img {
 }
 
 .navbar.navbar-scroll {
-    background-color: rgba(63, 135, 245, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
 }
 
@@ -312,6 +312,61 @@ img {
     background-color: var(--quatenary-color);
 }
 
+/* Clients */
+.client {
+    padding: 5rem 0;
+}
+
+.client h2 {
+    text-align: center;
+    color: var(--quatenary-color);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.client-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.client-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 2rem 2.5rem;
+}
+
+.client-card p {
+    color: var(--light-color);
+    margin-bottom: 1.5rem;
+}
+
+.client-card h3 {
+    font-size: 1.2rem;
+    color: var(--quatenary-color);
+}
+
+.client-card h4 {
+    color: var(--light-color);
+}
+
+.client-card img {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* FAQ */
+
 
 @media(max-width: 768px) {
     .main-menu-items {
@@ -325,6 +380,10 @@ img {
     .navbar .mobile-menu-toggle {
         display: block;
         padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 1rem;
     }
 
     /* hero */
@@ -364,5 +423,10 @@ img {
 
     .package-popular {
         width: 90%;
+    }
+
+    /* clients */
+    .client-cards {
+        grid-template-columns: 1fr;
     }
 }
