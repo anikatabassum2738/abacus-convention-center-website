@@ -526,4 +526,13 @@ img {
     .faq-image img {
         height: 300px;
     }
+
+    /* footer */
+    .footer-flex {
+        flex-direction: column-reverse;
+    }
+
+    .footer-app {
+        margin-bottom: 3rem;
+    }
 }
