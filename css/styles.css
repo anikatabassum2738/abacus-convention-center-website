@@ -429,7 +429,32 @@ img {
 }
 
 /* Footer */
+.footer {
+    padding: 5rem 0;
+    background: var(--footer-color);
+    color: lightgray;
+}
 
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+.footer-app {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer-app img {
+    width: 100px;
+    border-radius: 4px;
+}
 
 @media(max-width: 768px) {
     .main-menu-items {
