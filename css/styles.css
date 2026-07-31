@@ -138,6 +138,10 @@ img {
     height: 600px;
     position: relative;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero::before {
@@ -147,19 +151,10 @@ img {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero .hero-flex {
-    height: 100%;
-    padding-top: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
 .hero-content {
     max-width: 650px;
-    text-align: center;
+    z-index: 1;
+    position: relative;
 }
 
 .hero-content h1 {
@@ -170,6 +165,50 @@ img {
 
 .hero-content p {
     margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slider-arrow-left {
+    left: 2rem;
+}
+
+.slider-arrow-right {
+    right: 2rem;
+}
+
+.slider-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 0.5rem;
+    z-index: 2;
+}
+
+.slider-indicators span {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.slider-indicators span.active {
+    background-color: white;
 }
 
 /* Album */
