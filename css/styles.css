@@ -160,12 +160,12 @@ h2 {
     max-width: 650px;
     z-index: 1;
     position: relative;
-    top: 6rem
+    top: 8rem;
+    line-height: 1.2;
 }
 
 .hero-content h1 {
     font-size: 3rem;
-    line-height: 1.2;
     margin: 1rem;
 }
 
