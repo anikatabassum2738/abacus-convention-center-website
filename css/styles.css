@@ -35,6 +35,11 @@ img {
     max-width: 100%;
 }
 
+h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
 /* Utility Class */
 .container {
     max-width: 1200px;
@@ -155,6 +160,7 @@ img {
     max-width: 650px;
     z-index: 1;
     position: relative;
+    top: 6rem
 }
 
 .hero-content h1 {
@@ -174,7 +180,7 @@ img {
     transform: translateY(-50%);
     background: transparent;
     border: none;
-    color: white;
+    color: #9B9B9B;
     font-size: 2.5rem;
     cursor: pointer;
     z-index: 2;
@@ -193,7 +199,6 @@ img {
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-
     display: flex;
     gap: 0.5rem;
     z-index: 2;
@@ -203,12 +208,8 @@ img {
     display: block;
     width: 45px;
     height: 3px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #C4C4C494;
     border-radius: 5px;
-}
-
-.slider-indicators span.active {
-    background-color: white;
 }
 
 /* Album */
@@ -259,8 +260,8 @@ img {
 .packages h2 {
     text-align: center;
     color: var(--quatenary-color);
-    font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 120px;
+    
 }
 
 .packages-list {
@@ -328,6 +329,10 @@ img {
     border-radius: 1.5rem;
     padding: 3rem 2rem;
     box-shadow: 0 20px 30px rgba(63, 135, 245, 0.3);
+    bottom: 40px;
+    width: 292px;
+    height: 500px;
+    
 
     .hot {
         position: absolute;
@@ -348,7 +353,7 @@ img {
 }
 
 .package-popular .btn:hover {
-    background-color: var(--quatenary-color);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Clients */
@@ -359,8 +364,7 @@ img {
 .client h2 {
     text-align: center;
     color: var(--quatenary-color);
-    font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 120px;
 }
 
 .client-cards {
@@ -412,8 +416,7 @@ img {
 .faq h2 {
     text-align: center;
     color: var(--quatenary-color);
-    font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 120px;
 }
 
 .faq-content {
@@ -458,6 +461,7 @@ img {
 
 .faq-question i {
     color: #456b78;
+    margin-left: 20px;
 }
 
 .faq-image img {
@@ -481,7 +485,7 @@ img {
 }
 
 .footer p {
-    font-size: 0.8rem;
+    font-size: 14px;
 }
 
 .footer-app {
@@ -515,7 +519,7 @@ img {
 
     /* hero */
     .hero-content {
-        padding-top: 10rem;
+        padding-top: 8rem;
     }
 
     .hero-content h1 {
@@ -527,6 +531,16 @@ img {
     }
 
     /* album */
+    .album {
+        padding: 20px 0;
+        padding-top: 40px;
+
+        h2 {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+    }
+
     .album-flex {
         flex-direction: column;
     }
@@ -540,8 +554,21 @@ img {
     }
 
     /* Packages */
+    .packages {
+        padding: 20px 0;
+
+        .container {
+            padding-left: 0;
+        }
+
+        h2 {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+    }
     .packages-list {
         flex-direction: column;
+        margin-left: 0;
     }
 
     .package {
@@ -550,16 +577,35 @@ img {
 
     .package-popular {
         width: 90%;
+       
     }
 
     /* clients */
+    .client {
+        padding: 20px 0;
+    }
+
+    .client h2 {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
     .client-cards {
         grid-template-columns: 1fr;
     }
 
     /* FAQ */
+    .faq {
+        padding: 20px 0;
+    }
+
+    .faq h2 {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
     .faq-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .faq-image img {
