@@ -37,7 +37,7 @@ img {
 
 h2 {
     font-size: 38px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Utility Class */
@@ -228,6 +228,10 @@ h2 {
     width: 50%;
     border-radius: 5px;
 }
+
+.album-img-2 {
+        display: none;
+    } 
 
 .album-content {
     text-align: left;
@@ -537,7 +541,13 @@ h2 {
 
         h2 {
             font-size: 19px;
+            font-weight: 700;
             margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 700;
         }
     }
 
@@ -547,6 +557,15 @@ h2 {
 
     .album img {
         width: 100%;
+    }
+
+    .album-img-1 {
+        display: none;
+    }
+
+    .album-img-2 {
+        margin-bottom: 20px;
+        display: block;
     }
 
     .album-content {
